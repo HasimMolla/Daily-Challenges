@@ -42,8 +42,8 @@ body {
 
 .modal_container {
     background-color: #ffffff;
-    /* height: 400px; */
-    width: 560px;
+    /* height: 250px; */
+    width: 380px;
     max-width: 90%;
     padding: 20px;
     border-radius: 5px;
@@ -53,7 +53,27 @@ body {
 }
 
 .modal_container h2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.modal_container .user_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+.modal_container .user_login input{
+    height: 35px;
+    width: 50%;
+    border: 1.5px solid #6b46c1 ;
+    border-radius: 5px;
+    padding: 5px;
+}
+.modal_container .user_login input::placeholder{
+    font-size: 0.8rem;
+    color: #06033b;
 }
 
 .modal_container p {
@@ -64,7 +84,8 @@ body {
 .modal_container .action {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .modal_container .close {

@@ -8,7 +8,7 @@ closeBtn.addEventListener("click", closeModal);
 modalWrapper.addEventListener("click", (e) => {
   // if (e.target !== this) return;
   // console.log(e.target);
-  closeModal();
+  // closeModal();
 });
 
 document.addEventListener("keydown", function (e) {
