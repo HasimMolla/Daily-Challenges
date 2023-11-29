@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#933ded;
+    --dark:#232323;
+    --pure:#ffffff;
+    --smoke:whitesmoke;
+    --dark-grey:#999;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: var(--dark);
+    color: var(--pure);
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    max-width: 90%;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.nav-wrapper .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.nav-wrapper .logo h2{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.nav-wrapper .logo h2 span{
+    color: var(--primary);
+}
+
+.nav-wrapper .nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.nav-wrapper .nav-list li a{
+  text-decoration: none;
+  color: var(--pure);
+  cursor: pointer;
+transition: all 0.3s linear;
+}
+
+.nav-wrapper .nav-list li a:hover{
+    color: var(--primary);
+    transition: all 0.3s linear;
+}
+
+.nav-wrapper .nav-list .active a{
+    color: var(--primary);
+}
+ .btn{
+    border: none;
+    background-color: var(--primary);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--pure);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.btn:hover{
+    background-color: #a35af0;
+    transition: all 0.3s linear;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.header .header_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .header_inner h2{
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--pure);
+}
+
+.header .header_inner h4{
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 100;
+    color: var(--dark-grey);
+    margin-top: 10px;
+}
+.header .btn{
+margin-top: 20px;
+}
+
