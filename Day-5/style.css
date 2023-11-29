@@ -1,0 +1,127 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body,
+  html {
+      width: 100%;
+      height: 100%;
+  }
+
+  body {
+      background-color: #212121;
+      color: #ffffff;
+  }
+
+  .container {
+      height: 100%;
+      width: 90%;
+      margin: 2rem auto 6rem auto;
+  }
+
+  .container h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2.8rem;
+      text-align: center;
+      /* border-bottom: 2px solid aquamarine; */
+  }
+
+  .container h1 span {
+      color: aqua;
+      font-weight: 900;
+  }
+
+  .container .gallery {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      padding: 0.5rem;
+  }
+
+  .container .gallery img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: 0.3s all ease-in-out;
+  }
+
+  .container .gallery img:hover {
+      transform: scale(1.1);
+      border: 2px solid #ffffff;
+      transition: 0.3s all ease-in-out;
+  }
+
+  .container .image_view {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #000000e6;
+      height: 100%;
+      width: 100%;
+      z-index:9;
+      display: none;
+      /* pointer-events: none; */
+  }
+
+  .container .image_view .exit {
+      position: absolute;
+      top: 0;
+      right: 40px;
+      font-size: 50px;
+      font-weight: 500;
+      color: #ffffff;
+      cursor: pointer;
+  }
+
+  .container .image_view .navigate {
+      position: relative;
+      /* width: 52%; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      top: 250px;
+      font-size: 50px;
+      font-weight: 500;
+      color: #ffffff;
+  }
+
+  .container .image_view .prev {
+      position: absolute;
+      left: 10rem;
+      cursor: pointer;
+  }
+
+  .container .image_view .next {
+      position: absolute;
+      right: 10rem;
+      cursor: pointer;
+  }
+
+  .container .image_view img {
+      position: absolute;
+      top: 1.5rem;
+      left:25%;
+      /* transform: translate(-50%, -50%); */
+      border: 4px solid #ffffff;
+      border-radius: 10px;
+      width: 600px;
+      height: 550px;
+      object-fit: cover;
+      animation: zoomIn 0.6s linear;
+  }
+
+
+  @keyframes zoomIn {
+      from {
+          transform: scale(0);
+      }
+
+      to {
+          transform: scale(1);
+      }
+  }

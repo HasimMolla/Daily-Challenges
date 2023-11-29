@@ -1,0 +1,36 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body,
+  html {
+      width: 100%;
+      height: 100%;
+  }
+
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #212121;
+      color: #fff;
+  }
+
+  #btn {
+      padding: 20px 20px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #000000;
+      background-color: #ffffff;
+      border: none;
+      border-radius: 15px;
+      transition:all 0.5s ease;
+  }
+
+  #btn:hover {
+      background-color: #b9299f;
+      color: #fff;
+  }
