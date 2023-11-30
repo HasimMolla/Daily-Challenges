@@ -1,7 +1,10 @@
+//INFO:select elements and assign them to variables
 const trigger = document.querySelector("#trigger");
 const modalWrapper = document.querySelector(".modal_wrapper");
 const closeBtn = document.querySelector(".close");
 
+
+//trigger our events 
 trigger.addEventListener("click", openModal);
 closeBtn.addEventListener("click", closeModal);
 
@@ -16,6 +19,8 @@ document.addEventListener("keydown", function (e) {
     closeModal();
   }
 });
+
+// create my usable functions
 
 function openModal() {
   modalWrapper.classList.add("active");

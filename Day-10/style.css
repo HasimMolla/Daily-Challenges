@@ -4,8 +4,101 @@
      box-sizing: border-box;
  }
 
+ :root {
+     --primary: #28a745;
+     --dark: #232323;
+     --pure: #ffffff;
+     --smoke: whitesmoke;
+     --dark-grey: #999;
+     --secondary: #eee8d5;
+ }
+
  body,
  html {
      width: 100%;
      height: 100%;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .container {
+     width: 100%;
+     height: 100%;
+     background-color: var(--dark);
+     color: var(--pure);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .container .container_wrapper {
+     width: 450px;
+     height: 400px;
+     padding: 10px 20px;
+     border-radius: 10px;
+     background-color: var(--secondary);
+     color: var(--dark);
+ }
+
+ .container .container_wrapper .text {
+     font-size: 1.5rem;
+     font-weight: 600;
+     text-align: center;
+     margin-bottom: 10px;
+     /* color: var(--primary); */
+ }
+
+ .container .container_wrapper input {
+     height: 43px;
+     width: 60%;
+     border: 1px solid var(--secondary);
+     border-radius: 5px 0px 0px 5px;
+     padding: 5px 0px 5px 8px;
+     margin: 20px 0px 20px 40px;
+     font-size: 1rem;
+     font-weight: 500;
+ }
+
+ .container .container_wrapper input::placeholder {
+     font-size: 0.8rem;
+     color: #06033b;
+ }
+
+ .container_wrapper input:focus {
+     outline: none;
+ }
+
+ .container_wrapper .submit_btn {
+     padding: 12.45px;
+     font-size: 0.8rem;
+     font-weight: 500;
+     border-radius: 0px 5px 5px 0px;
+     border: none;
+     background-color: var(--primary);
+     color: #ffffff;
+     cursor: pointer;
+     margin-left: -4px;
+     transition: all 0.3s linear;
+ }
+
+ .container_wrapper .submit_btn:hover {
+     background-color: #208838;
+     transition: all 0.3s linear;
+ }
+
+ .container .container_wrapper .output{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+ }
+
+ .container_wrapper .error_msg {
+     text-align: center;
+     margin-top: 40px;
+     background-color: rgb(228, 102, 102);
+     height: 40px;
+     padding: 10px;
+     color: var(--pure);
+     font-size: 1rem;
+     font-weight: 500;
+     border-radius: 5px;
  }
