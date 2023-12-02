@@ -76,6 +76,10 @@ body {
     color: #06033b;
 }
 
+.modal_container .user_login input:focus{
+    outline: none;
+}
+
 .modal_container p {
     line-height: 1.6;
     margin-bottom: 20px;

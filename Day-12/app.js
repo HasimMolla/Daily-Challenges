@@ -1,17 +1,17 @@
 //INFO:select elements and assign them to variables
 const trigger = document.querySelector("#trigger");
 const modalWrapper = document.querySelector(".modal_wrapper");
+const modalContainer = document.querySelector(".modal_container");
 const closeBtn = document.querySelector(".close");
 
-
-//trigger our events 
+//trigger our events
 trigger.addEventListener("click", openModal);
 closeBtn.addEventListener("click", closeModal);
 
 modalWrapper.addEventListener("click", (e) => {
-  // if (e.target !== this) return;
-  // console.log(e.target);
-  // closeModal();
+  if (e.target !== modalWrapper) return;
+  console.log(e.target);
+  closeModal();
 });
 
 document.addEventListener("keydown", function (e) {
