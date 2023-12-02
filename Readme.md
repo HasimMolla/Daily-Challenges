@@ -16,11 +16,6 @@ This project is a simple, yet interactive webpage designed for beginners in web 
 -   A button that, when clicked, changes the background color of the page.
 -   Use of JavaScript to manipulate the DOM and change CSS properties.
 
-### 🚀 How to Run the Project
-
-1. Clone the repository to your local machine.
-2. Open the `index.html` file in any web browser to view the project.
-
 ### 🌐 Live Demo
 
 You can view the live demo of this project [here](https://dbgchanger.netlify.app/)
@@ -29,16 +24,15 @@ You can view the live demo of this project [here](https://dbgchanger.netlify.app
 
 #### Check out this quick demo!
 
-![Screenshot of the Project](./assets/change-bg.gif.mp4)
+![Screenshot of the Project](./assets/change-bg.gif)
 
 ### 💡 Feedback and Contact
 
-Love this project? Share your thoughts and suggestions! Reach out to me on [LinkedIn](https://www.linkedin.com/in/codersgyan/) or leave a star on GitHub.
+Love this project? Share your thoughts and suggestions! Reach out to me on [LinkedIn](www.linkedin.com/in/molla-hasim) or leave a star on GitHub.
 
 ### 🌟 Future Enhancements
 
--   Implement a color picker to allow users to select the color to which the background will change.
--   Add animations to the color transition for a smoother user experience.
+-  
 
 ### 👥 Contributing
 
