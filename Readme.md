@@ -1,4 +1,6 @@
-# 🌈 Day 1 Challenge - Dynamic Background Color
+# 🚀Daily-Challenges
+
+## 🌈 Day 1 Challenge - Dynamic Background Color
 
 ## Level: 👶🏽 Beginner
 
@@ -26,9 +28,28 @@ You can view the live demo of this project [here](https://dbgchanger.netlify.app
 
 ![Screenshot of the Project](./assets/change-bg.gif)
 
+## ⏲️ Day 2 Challenge - Digital Clock
+
+## Level: Intermediate 🕵️‍♀️
+### 📋 Overview 
+This project is a simple, yet interactive webpage designed for beginners in web development. The core functionality of the page is just make a digital clock
+### 🛠 Technologies Used
+
+-   HTML
+-   JavaScript
+
+### 🌐 Live Demo
+
+You can view the live demo of this project [here](https://dgownclock.netlify.app/)
+### 📸 How it looks?
+
+#### Check out this quick demo!
+
+![Screenshot of the Project](./assets/Digital%20Clock.gif)
+
 ### 💡 Feedback and Contact
 
-Love this project? Share your thoughts and suggestions! Reach out to me on [LinkedIn](www.linkedin.com/in/molla-hasim) or leave a star on GitHub.
+Love this project? Share your thoughts and suggestions! Reach out to me on [LinkedIn](https://www.linkedin.com/in/molla-hasim/) or leave a star on GitHub.
 
 ### 🌟 Future Enhancements
 
