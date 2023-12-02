@@ -55,9 +55,7 @@ html {
     font-weight: 600;
     cursor: pointer;
 }
-.container_wrapper .upload{
-    /* display: none; */
-}
+
 
 .container .container_output{
     width: 250px;
