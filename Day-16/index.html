@@ -10,19 +10,38 @@
 
 <body>
     <div class="container">
-        <h1>BMI Calculator</h1>
+        <nav>
+            <img src="./assets/BMI_logo.svg" alt="BMI_logo"/>
+
+            <div class="header">
+                <h1>BMI Calculator</h1>
+                <h3>Body Mass Index</h3>
+            </div>
+        </nav>
+       <div class="container_wrapper">
+        <div class="uweight flex">
+            <img src="./assets/underweight_img.svg" alt="" srcset="">
+            <p>Underweight</p>
+        </div>
+
         <form>
-            <p><label>Height in CM: </label><input type="text" id="height" /></p>
-            <p><label>Weight in KG: </label><input type="text" id="weight" /></p>
+            <p><label>HEIGHT :</label><input type="text" id="height" placeholder="in Kgs" /></p>
+            <p><label>WEIGHT :</label><input type="text" id="weight" placeholder="im cm" /></p>
             <button>Calculate</button>
             <div id="results"></div>
             <div id="weight-guide">
-                <h3>BMI Weight Guide</h3>
+                <h3>BMI Weight Guide 🎗️</h3>
                 <p>Under Weight = Less than 18.6</p>
-                <p>Normal Range = 18.6 and 24.9</p>
+                <p>Normal Range = 18.6 to 24.9</p>
                 <p>Overweight = Greater than 24.9</p>
             </div>
         </form>
+
+        <div class="oweight flex">
+            <img src="./assets/overweight.svg" alt=""/>
+            <p>Overweight</p>
+        </div>
+       </div>
     </div>
 
 
