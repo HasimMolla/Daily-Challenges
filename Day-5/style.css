@@ -63,15 +63,18 @@
       background-color: #000000e6;
       height: 100%;
       width: 100%;
-      z-index:9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9;
       display: none;
       /* pointer-events: none; */
   }
 
   .container .image_view .exit {
       position: absolute;
-      top: 0;
-      right: 40px;
+      top: 0.5rem;
+      right: 20%;
       font-size: 50px;
       font-weight: 500;
       color: #ffffff;
@@ -81,9 +84,9 @@
   .container .image_view .navigate {
       position: relative;
       /* width: 52%; */
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       top: 250px;
       font-size: 50px;
       font-weight: 500;
@@ -92,21 +95,21 @@
 
   .container .image_view .prev {
       position: absolute;
-      left: 10rem;
+      left: 15rem;
       cursor: pointer;
   }
 
   .container .image_view .next {
       position: absolute;
-      right: 10rem;
+      right: 15rem;
       cursor: pointer;
   }
 
   .container .image_view img {
       position: absolute;
-      top: 1.5rem;
-      left:25%;
-      /* transform: translate(-50%, -50%); */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       border: 4px solid #ffffff;
       border-radius: 10px;
       width: 600px;
