@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+li{
+    list-style:none;
+}
+
+:root {
+    --button_color: #FFDD33;
+    --primary_color: #FFFFFF;
+    --secdary_color: #000000;
+}
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+}
+
+.page1 nav {
+    width: 100%;
+    display: flex;
+    height: 120px;
+    padding: 40px 80px 25px 80px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    border: 1px solid red;
+}
+
+.page1 nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.7vw;
+}
+.page1 nav .logo p{
+    font-family: sans-serif;
+    font-size: 1.3vw;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+
+.page1 nav .menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3vw;
+    letter-spacing: -0.5px;
+}
+.page1 nav .menu ul .list_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.page1 nav .menu ul li:hover{
+  background-color: var(--button_color);
+  padding: 0.5vw;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ;
+}
+
+
+
+.page1 nav .login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8vw;
+    letter-spacing: -0.5px;
+}
+
+.page1 nav .login button{
+     background-color: var(--secdary_color);
+     color: var(--primary_color);
+  padding:1rem 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ;
+}
+
+.page1 nav .login button:hover{
+     background-color: var(--button_color);
+     color: var(--secdary_color);
+    font-weight: 700;
+  transition: all 0.3s ;
+}

@@ -47,6 +47,7 @@
       object-fit: cover;
       cursor: pointer;
       border-radius: 10px;
+      filter: grayscale(0);
       transition: 0.3s all ease-in-out;
   }
 
@@ -54,6 +55,7 @@
       transform: scale(1.1);
       border: 2px solid #ffffff;
       transition: 0.3s all ease-in-out;
+      filter: grayscale(100%);
   }
 
   .container .image_view {
