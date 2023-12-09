@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 html,
@@ -10,8 +13,8 @@ body {
     height: 100%;
 }
 
-li{
-    list-style:none;
+li {
+    list-style: none;
 }
 
 :root {
@@ -22,7 +25,7 @@ li{
 
 .page1 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .page1 nav {
@@ -33,68 +36,453 @@ li{
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
-.page1 nav .logo{
+.page1 nav .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:0.7vw;
+    gap: 0.7vw;
 }
-.page1 nav .logo p{
-    font-family: sans-serif;
-    font-size: 1.3vw;
-    font-weight: 600;
+
+.page1 nav .logo p {
+    font-size: 1.7vw;
+    font-weight: 700;
     letter-spacing: -1px;
 }
 
 
-.page1 nav .menu ul{
+.page1 nav .menu ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:3vw;
-    letter-spacing: -0.5px;
+    gap: 1.8vw;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 20.651px;
+    letter-spacing: -0.138px;
+    /* border: 1px solid red; */
 }
-.page1 nav .menu ul .list_item{
+
+.page1 nav .menu ul .list_item {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1vw;
+    gap: 0.5vw;
 }
 
-.page1 nav .menu ul li:hover{
-  background-color: var(--button_color);
-  padding: 0.5vw;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ;
+.page1 nav .menu ul li {
+    padding: 0.5vw;
+}
+
+.page1 nav .menu ul li:hover {
+    background-color: var(--button_color);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    /* border: 1px solid red; */
 }
 
 
 
-.page1 nav .login{
+.page1 nav .login {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.8vw;
     letter-spacing: -0.5px;
+    /* border: 1px solid red; */
 }
 
-.page1 nav .login button{
-     background-color: var(--secdary_color);
-     color: var(--primary_color);
-  padding:1rem 1.2rem;
-  border-radius: 25px;
-  cursor: pointer;
-  border: none;
-  transition: all 0.3s ;
-}
-
-.page1 nav .login button:hover{
-     background-color: var(--button_color);
-     color: var(--secdary_color);
+.page1 nav .login p {
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 0.8rem;
     font-weight: 700;
-  transition: all 0.3s ;
+    border-radius: 25px;
+    transition: all 0.3s linear;
+}
+
+.page1 nav .login p:hover {
+    background-color: var(--button_color);
+    color: var(--secdary_color);
+    transition: all 0.3s linear;
+}
+
+.page1 nav .login button {
+    background-color: var(--secdary_color);
+    color: var(--primary_color);
+    padding: 1rem 1.2rem;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    font-size: 0.8rem;
+    transition: all 0.3s linear;
+}
+
+.page1 nav .login button:hover {
+    background-color: var(--button_color);
+    color: var(--secdary_color);
+    transition: all 0.3s linear;
+}
+
+
+.page1 .hero_sec {
+    width: 100%;
+    height: 100%;
+    /* height: calc(100vh - 120px); */
+    /* background-color: #FFDD33; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8vw;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++
+        Hero section right portion starts here 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+.page1 .hero_sec .sec_left {
+    height: 100%;
+    width: 55%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* background-color: aqua; */
+}
+
+.page1 .hero_sec .sec_left .img1 {
+    width: 80%;
+    margin-top: -80px;
+    position: relative;
+    z-index: 8;
+    /* border: 2px solid red; */
+    /* height: 987px; */
+}
+
+.page1 .hero_sec .sec_left .img2 {
+    position: absolute;
+    margin: 315px 0px 0px -350px;
+    width: 130px;
+    z-index: 7;
+}
+
+.page1 .hero_sec .sec_left .img3 {
+    position: absolute;
+    margin: 144px 0px 0px -370px;
+    z-index: 11;
+    width: 210px;
+}
+
+.page1 .hero_sec .sec_left .img4 {
+    position: absolute;
+    margin: 90px 0px 0px -210px;
+    z-index: 10;
+    width: 330px;
+}
+
+.page1 .hero_sec .sec_left .img5 {
+    position: absolute;
+    z-index: 10;
+    margin: 80px 0px 0px 0px;
+}
+
+.page1 .hero_sec .sec_left .img6 {
+    position: absolute;
+    z-index: 10;
+    margin: 525px 0px 0px 0px;
+}
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++
+        Hero section right portion starts here 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+.page1 .hero_sec .sec_right {
+    height: 100%;
+    width: 45%;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0px 80px 0px 0px;
+    /* background-color: rgb(0, 34, 255); */
+}
+
+.page1 .hero_sec .sec_right h1 {
+    color: #171717;
+    font-size: 6.5vw;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -3.84px;
+}
+
+.page1 .hero_sec .sec_right p {
+    font-size: 1.2rem;
+    color: #98A2B3;
+    font-weight: 400;
+    letter-spacing: -0.92px;
+}
+
+.page1 .hero_sec .sec_right .btn .btn1 {
+    background-color: var(--button_color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    cursor: pointer;
+
+}
+
+.page1 .hero_sec .sec_right .btn .btn2 {
+    background-color: #FFFFFF;
+    border: 2px solid #EFEFEF;
+    border-radius: 20px;
+    padding: 10px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.page1 .hero_sec .sec_right .btn .btn2:hover {
+    background-color: var(--button_color);
+    border: 2px solid var(--button_color);
+    transition: all 0.3s linear;
+
+}
+
+.page1 .hero_sec .sec_right .person {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.page1 .hero_sec .sec_right .person .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page1 .hero_sec .sec_right .person .avatar img {
+    background-color: #FFBC99;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -10px;
+}
+
+.page1 .hero_sec .sec_right .person .avatar .img2 {
+    background-color: #CABDFF;
+}
+
+.page1 .hero_sec .sec_right .person .avatar .img3 {
+    background-color: #B5E4CA;
+}
+
+.page1 .hero_sec .sec_right .person .user {
+    display: flex;
+    flex-direction: column;
+}
+
+.page1 .hero_sec .sec_right .person .user .part1 {
+    display: flex;
+}
+
+.page1 .hero_sec .sec_right .person .user .part1 p {
+    color: var(--secdary_color);
+    font-size: 3.6vw;
+    font-weight: 500;
+    letter-spacing: -2.2px;
+}
+
+.page1 .hero_sec .sec_right .person .user p {
+    color: #9E9E9E;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/* 
++++++++++++++++++++++++++++++++++++++++
+         paart 2 starts here 
++++++++++++++++++++++++++++++++++++++++
+*/
+
+.page2 {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: red; */
+}
+
+.page2 h1 {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 500;
+    letter-spacing: -1.92px;
+}
+
+.page2 .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw 5vw;
+    gap: 2vw;
+
+}
+
+.page2 .card .card1 {
+    background-color: #F9FAFB;
+    border-radius: 25px;
+    padding: 3vw;
+}
+
+.page2 .card .card_img {
+    width: 60px;
+    height: 60px;
+    background-color: var(--button_color);
+    padding: 14px 14px;
+    border-radius: 28px;
+
+}
+
+.page2 .card h2 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin: 20px 0px;
+}
+
+.page2 .card p {
+    font-size: 1.3rem;
+    color: #98A2B3;
+    font-weight: 400;
+    letter-spacing: -0.72px;
+    margin: 20px 0px;
+}
+
+.page2 .card .card2 {
+    background-color: #F9FAFB;
+    border-radius: 25px;
+    padding: 3vw;
+}
+
+.page2 .card .card2 .wallet_card {
+    width: 220px;
+    height: 240px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding: 1.5vw 2vw;
+}
+
+.page2 .card .card2 .wallet_card .img1 {
+    /* width: 50px;
+    height: 50px; */
+    background-color: var(--button_color);
+    padding: 14px 14px;
+    border-radius: 28px;
+}
+
+.page2 .card .card2 .wallet_card p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+.page2 .card .card2 .wallet_card h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    /* margin: 10px 0; */
+    letter-spacing: -1px;
+}
+
+
+.page2 .card .card2 .income_card {
+    width: 420px;
+    height: 440px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 1.5vw 2vw;
+}
+.page2 .card .card2 .income_card p{
+font-size: 0.8rem;
+}
+.page2 .card .card2 .income_card h3{
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: -2.2px;
+    /* margin: 10px 0px; */
+}
+.page2 .card .card2 .income_card .avag{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+.page2 .card .card2 .income_card .avag p{
+    font-size:.8rem;
+    letter-spacing: -1px;
+    /* margin-top: 10px; */
+    
+}
+
+.page2 .card .card2 .income_card .avag p span{
+    color: #06e59b;
+    font-weight: 500;
+}
+
+.page2 .card .card2 .income_card .btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  
+}
+
+.page2 .card .card2 .income_card .btn .btn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272B30;
+    color: #fff;
+    gap: 6px;
+    /* padding: 0px 20px; */
+    width: 50%;
+    border-radius: 10px;
+}
+.page2 .card .card2 .income_card .btn .btn1 img{
+    filter: invert(100%);
+}
+.page2 .card .card2 .income_card .btn .btn1 p{
+    font-size: .8rem;
+    color: #FFFFFF;
+}
+
+.page2 .card .card2 .income_card .btn .btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bbbbbb20;
+    border-radius: 10px;
+    width: 50%;
+  
+}
+.page2 .card .card2 .income_card .btn .btn2 img {
+    /* filter: invert(100%); */
+}
+.page2 .card .card2 .income_card .btn .btn2 p{
+    font-size: .9rem;
+    color: #1a1b1b;
+    font-weight: 500; 
 }

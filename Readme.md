@@ -1,4 +1,5 @@
 # 🚀Daily-Challenges
+### Solar System Exploration, 1950s – 1960s
 
 ## 🌈 Day 1 Challenge - Dynamic Background Color
 
