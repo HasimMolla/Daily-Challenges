@@ -23,6 +23,10 @@ li {
     --secdary_color: #000000;
 }
 
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++
+        page1 starts here 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
 .page1 {
     width: 100%;
     min-height: 100vh;
@@ -325,6 +329,7 @@ li {
 .page2 {
     width: 100%;
     min-height: 100vh;
+    /* overflow: hidden; */
     /* background-color: red; */
 }
 
@@ -340,17 +345,22 @@ li {
     align-items: center;
     justify-content: center;
     padding: 3vw 5vw;
-    gap: 2vw;
+    gap: 2vw;overflow: hidden;
+    
 
 }
 
 .page2 .card .card1 {
+    width: auto;
+    height: 750px;
     background-color: #F9FAFB;
     border-radius: 25px;
     padding: 3vw;
+    border: 1px solid red;
+    overflow: hidden;
 }
 
-.page2 .card .card_img {
+.page2 .card .card1 .card_img {
     width: 60px;
     height: 60px;
     background-color: var(--button_color);
@@ -373,11 +383,174 @@ li {
     letter-spacing: -0.72px;
     margin: 20px 0px;
 }
+.debit_card{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.visa {
+    height: 480px;
+    width: 300px;
+    padding:1vw 2vw;
+    color: #ffffff;
+    position: absolute;
+    z-index: 6;
+    margin-left: -15vw;
+        /* margin-top: 15vw; */
+    border-radius: 25px;
+    background: url(./Noise.png), #181818 0% 0% / 24.73033368587494px 24.73033368587494px repeat;
+    background-image: linear-gradient(#00000012, 000000);
+}
+
+.visa .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.visa .header p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.visa .chip {
+    border: 1px solid #ffffff;
+    /* display: inline; */
+    height: 38px;
+    width: max-content;
+    border-radius: 6px;
+    padding-bottom: -5px;
+    background-color: #3c3c3c;
+    margin: 6vw 0vw 0vw 0vw;
+}
+
+.visa .last {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vw;
+    position: relative;
+}
+
+.visa .last p {
+    color: #98A2B3;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+    /* position: absolute; */
+    z-index: 10;
+}
+
+.visa .last h4 {
+    color: #FFFFFF;
+    font-size: 2.5vw;
+    font-weight: 500;
+    margin-bottom: 5px;
+    /* position: absolute; */
+    z-index: 10;
+}
+
+.visa .last img {
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    z-index: 9;
+    filter: invert(72%);
+    margin-top: 100px;
+    margin-left: -80px;
+}
+
+.visa .last .account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: -10px; */
+
+}
+
+.visa .last h5 {
+    color: #98A2B3;
+    font-size: 0.7rem;
+    margin: 40px 0px 10px;
+    font-weight: 400;
+    /* position: absolute; */
+    z-index: 10;
+}
+
+.visa .last h3 {
+    color: #FFFFFF;
+    font-size: 1.2vw;
+    font-weight: 400;
+    margin-bottom: 5px;
+    /* position: absolute; */
+    z-index: 10;
+}
+
+
+.Mastercard {
+    height: 480px;
+    width: 300px;
+    padding:1vw 2vw;
+    color: #151515;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 8;
+    margin-left: 10vw;
+    margin-top: 15vw;
+    background-color: #f1f2f2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.Mastercard .last h3 {
+    color: #000;
+    font-weight: 600;
+}
+.Mastercard .header p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+}
+
+
+.Mastercard .last h4 {
+    color: #000000;
+    font-weight: 500;
+}
+
+.Mastercard .chip {
+    border: 1.5px solid #5a6f6f;
+    /* display: inline; */
+    height: 39px;
+    width: max-content;
+    border-radius: 6px;
+    padding-bottom: -5px;
+    background-color: #ffffff;
+    margin: 10vw 0vw 0vw 0vw;
+}
+
+.Mastercard .last img {
+    position: absolute;
+    width: 120%;
+    height: 322%;
+    /* z-index: 9; */
+    filter: invert(0%);
+    margin-top: -295px;
+    margin-left: -25px;
+}
+
 
 .page2 .card .card2 {
     background-color: #f9fafb;
+    height: 750px;
     border-radius: 25px;
     padding: 3vw;
+    border: 1px solid red;
+    overflow: hidden;
 }
 
 .page2 .card .card2 .wallet_card {
@@ -588,3 +761,9 @@ li {
     color: #6F767E;
     letter-spacing: -0.12px;
 }
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++
+        page3 starts here 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
