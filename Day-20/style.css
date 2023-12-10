@@ -345,8 +345,9 @@ li {
     align-items: center;
     justify-content: center;
     padding: 3vw 5vw;
-    gap: 2vw;overflow: hidden;
-    
+    gap: 2vw;
+    overflow: hidden;
+
 
 }
 
@@ -383,25 +384,26 @@ li {
     letter-spacing: -0.72px;
     margin: 20px 0px;
 }
-.debit_card{
+
+.debit_card {
     height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     position: relative;
-    
+
 }
 
 .visa {
     height: 480px;
     width: 300px;
-    padding:1vw 2vw;
+    padding: 1vw 2vw;
     color: #ffffff;
     position: absolute;
     z-index: 6;
     margin-left: -15vw;
-        /* margin-top: 15vw; */
+    /* margin-top: 15vw; */
     border-radius: 25px;
     background: url(./Noise.png), #181818 0% 0% / 24.73033368587494px 24.73033368587494px repeat;
     background-image: linear-gradient(#00000012, 000000);
@@ -420,13 +422,16 @@ li {
 
 .visa .chip {
     border: 1px solid #ffffff;
-    /* display: inline; */
     height: 38px;
     width: max-content;
     border-radius: 6px;
     padding-bottom: -5px;
     background-color: #3c3c3c;
     margin: 6vw 0vw 0vw 0vw;
+}
+
+.visa .chip .img1 {
+    margin-right: 8px;
 }
 
 .visa .last {
@@ -493,7 +498,7 @@ li {
 .Mastercard {
     height: 480px;
     width: 300px;
-    padding:1vw 2vw;
+    padding: 1vw 2vw;
     color: #151515;
     border-radius: 25px;
     position: absolute;
@@ -510,6 +515,7 @@ li {
     color: #000;
     font-weight: 600;
 }
+
 .Mastercard .header p {
     font-size: 1.2rem;
     font-weight: 600;
@@ -552,6 +558,13 @@ li {
     border: 1px solid red;
     overflow: hidden;
 }
+.page2 .card .card2 .card_img{
+    width: 60px;
+        height: 60px;
+        background-color: var(--button_color);
+        padding: 14px 14px;
+        border-radius: 28px;
+}
 
 .page2 .card .card2 .wallet_card {
     width: 220px;
@@ -565,8 +578,8 @@ li {
 }
 
 .page2 .card .card2 .wallet_card .img1 {
-    /* width: 50px;
-    height: 50px; */
+    width: 50px;
+    height: 50px;
     background-color: var(--button_color);
     padding: 14px 14px;
     border-radius: 28px;
@@ -767,3 +780,104 @@ li {
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 */
 
+.page3 {
+    width: 100%;
+    height: 60vh;
+    border: 1px solid red;
+    /* background-color: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 4vw;
+    gap: 10px;
+}
+
+.page3 .left_sec {
+    width: 50%;
+    height: 100%;
+    background-color: #f9fafb;
+    padding: 2vw;
+}
+
+.page3 .left_sec img {
+    width: 60px;
+    height: 60px;
+    background-color: var(--button_color);
+    padding: 0px 10px;
+    border-radius: 30px;
+}
+
+.page3 .left_sec h2 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    line-height: 2.2rem;
+    margin: 20px 0px;
+}
+
+.page3 .left_sec p {
+    font-size: 1.2rem;
+    color: #98A2B3;
+    font-weight: 400;
+    line-height: 1.8rem;
+    letter-spacing: -0.6px;
+    margin: 20px 0px;
+}
+
+.page3 .right-sec {
+    width: 50%;
+    height: 100%;
+    background-color: #f9fafb;
+    /* background-color: #494ed3; */
+    background-image: url(./assets/Dotted_Map.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page3 .right-sec .country_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 280px;
+    /* justify-content:first baseline; */
+    gap: 0.8rem;
+}
+
+.page3 .right-sec .country_img img {
+    width: fit-content;
+    /* height: 60px; */
+    background-color: #fff;
+    padding: 8px 8px;
+    border-radius: 15px;
+}
+
+.page3 .right-sec .country_img .img1 {
+    margin-left: 60px;
+}
+
+.page3 .right-sec .country_img .img2 {
+    margin-left: -80px;
+}
+
+.page3 .right-sec .country_img .img3 {
+    margin-left: 100px;
+}
+
+.page3 .right-sec .line_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.page3 .right-sec .line_img .line1 {
+    width: fit-content;
+    margin-left: 360px;
+    margin-top: -245px;
+    position: static;
+}
+
+.page3 .right-sec .line_img .line2 {
+    /* margin-top: -50px;  */
+}
