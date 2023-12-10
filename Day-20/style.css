@@ -558,12 +558,13 @@ li {
     border: 1px solid red;
     overflow: hidden;
 }
-.page2 .card .card2 .card_img{
+
+.page2 .card .card2 .card_img {
     width: 60px;
-        height: 60px;
-        background-color: var(--button_color);
-        padding: 14px 14px;
-        border-radius: 28px;
+    height: 60px;
+    background-color: var(--button_color);
+    padding: 14px 14px;
+    border-radius: 28px;
 }
 
 .page2 .card .card2 .wallet_card {
@@ -782,14 +783,14 @@ li {
 
 .page3 {
     width: 100%;
-    height: 60vh;
-    border: 1px solid red;
+    height: 70vh;
+    /* border: 1px solid red; */
     /* background-color: #000; */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1vw 4vw;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 .page3 .left_sec {
@@ -797,6 +798,7 @@ li {
     height: 100%;
     background-color: #f9fafb;
     padding: 2vw;
+    border-radius: 25px 0px 0px 15px;
 }
 
 .page3 .left_sec img {
@@ -827,11 +829,15 @@ li {
 .page3 .right-sec {
     width: 50%;
     height: 100%;
+    background-image: url(./assets/Dotted_Map1.png);
     background-color: #f9fafb;
-    /* background-color: #494ed3; */
-    background-image: url(./assets/Dotted_Map.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+    /* border: 1px solid rgb(19, 120, 178); */
+    border-radius: 0px 25px 25px 0px;
+    /* overflow: hidden; */
 }
 
 .page3 .right-sec .country_img {
@@ -875,9 +881,84 @@ li {
     width: fit-content;
     margin-left: 360px;
     margin-top: -245px;
-    position: static;
+    /* position: static; */
 }
 
 .page3 .right-sec .line_img .line2 {
     /* margin-top: -50px;  */
+}
+
+.page3 .right-sec .bank {
+    background-color: #ffffff;
+    height: 290px;
+    width: 240px;
+    padding: 1vw;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 11;
+    border: 1px solid rgb(7, 7, 3);
+    margin: 1vw 0vw 0vw 5vw;
+}
+
+.page3 .right-sec .bank .bank_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page3 .right-sec .bank .bank_logo img {
+    width: 35px;
+    height: 35px;
+    background-color: var(--button_color);
+    padding: 0px 5px;
+    border-radius: 30px;
+}
+
+.page3 .right-sec .bank .bank_logo P {
+    color: #d5dae1;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+    padding: 3px 6px;
+    border: 1.5px solid #d5dae1;
+    border-radius: 15px;
+}
+
+.page3 .right-sec .bank p {
+    color: #1e1d1d;
+    font-size: .8rem;
+    letter-spacing: -.8px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.page3 .right-sec .bank .bank_country {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d5dae1;
+    padding: 0px 3px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.page3 .right-sec .bank .bank_country .img1{
+    width: 28px;
+}
+
+.page3 .right-sec .bank .bank_name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page3 .right-sec .bank .bank_name img {
+    object-fit: cover;
+    width: 50px;
+    object-position: center;
+}
+
+.page3 .right-sec .bank h2{
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: -1.2px;
+    margin: -5px 0px;
 }
