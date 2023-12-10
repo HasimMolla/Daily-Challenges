@@ -375,17 +375,20 @@ li {
 }
 
 .page2 .card .card2 {
-    background-color: #F9FAFB;
+    background-color: #f9fafb;
     border-radius: 25px;
     padding: 3vw;
 }
 
 .page2 .card .card2 .wallet_card {
     width: 220px;
-    height: 240px;
-    background-color: #FFFFFF;
+    height: 230px;
+    background-color: #ffffff;
     border-radius: 25px;
     padding: 1.5vw 2vw;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 150px;
 }
 
 .page2 .card .card2 .wallet_card .img1 {
@@ -412,45 +415,50 @@ li {
 .page2 .card .card2 .income_card {
     width: 420px;
     height: 440px;
-    background-color: #ffffff;
+    background-color: #fefefe;
     border-radius: 25px;
     padding: 1.5vw 2vw;
 }
-.page2 .card .card2 .income_card p{
-font-size: 0.8rem;
+
+.page2 .card .card2 .income_card p {
+    font-size: 0.8rem;
 }
-.page2 .card .card2 .income_card h3{
+
+.page2 .card .card2 .income_card h3 {
     font-size: 2.2rem;
     font-weight: 500;
     letter-spacing: -2.2px;
     /* margin: 10px 0px; */
 }
-.page2 .card .card2 .income_card .avag{
-   display: flex;
-   align-items: center;
-   justify-content: flex-start;
-}
-.page2 .card .card2 .income_card .avag p{
-    font-size:.8rem;
-    letter-spacing: -1px;
-    /* margin-top: 10px; */
-    
+
+.page2 .card .card2 .income_card .avag {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.page2 .card .card2 .income_card .avag p span{
+.page2 .card .card2 .income_card .avag p {
+    font-size: .75rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+    /* margin-top: 10px; */
+
+}
+
+.page2 .card .card2 .income_card .avag p span {
     color: #06e59b;
     font-weight: 500;
 }
 
-.page2 .card .card2 .income_card .btn{
+.page2 .card .card2 .income_card .btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-  
+
 }
 
-.page2 .card .card2 .income_card .btn .btn1{
+.page2 .card .card2 .income_card .btn .btn1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -461,28 +469,122 @@ font-size: 0.8rem;
     width: 50%;
     border-radius: 10px;
 }
-.page2 .card .card2 .income_card .btn .btn1 img{
+
+.page2 .card .card2 .income_card .btn .btn1 img {
     filter: invert(100%);
 }
-.page2 .card .card2 .income_card .btn .btn1 p{
+
+.page2 .card .card2 .income_card .btn .btn1 p {
     font-size: .8rem;
     color: #FFFFFF;
 }
 
-.page2 .card .card2 .income_card .btn .btn2{
+.page2 .card .card2 .income_card .btn .btn2 {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #bbbbbb20;
     border-radius: 10px;
     width: 50%;
-  
+
 }
+
 .page2 .card .card2 .income_card .btn .btn2 img {
     /* filter: invert(100%); */
 }
-.page2 .card .card2 .income_card .btn .btn2 p{
+
+.page2 .card .card2 .income_card .btn .btn2 p {
     font-size: .9rem;
     color: #1a1b1b;
-    font-weight: 500; 
+    font-weight: 500;
+}
+
+.page2 .card .card2 .income_card .graph {
+    display: flex;
+    align-items: flex-end;
+    /* border: 1px solid red; */
+    gap: 0px;
+}
+
+.page2 .card .card2 .income_card .graph .graph_amount {
+    /* border: 1px solid red; */
+}
+
+.page2 .card .card2 .income_card .graph .graph_amount p {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: #6F767E;
+    letter-spacing: -0.12px;
+    margin: 15px 0px 0px 0px;
+}
+
+.page2 .card .card2 .income_card .graph .graph_line {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+    gap: 0.8rem;
+}
+
+.page2 .card .card2 .income_card .graph .graph_line .line1 {
+    height: 60px;
+    width: 35px;
+    background-color: #B5E4CA;
+    border-radius: 2px;
+}
+
+.page2 .card .card2 .income_card .graph .graph_line .line2 {
+    height: 40px;
+    width: 35px;
+    background-color: #FFBC99;
+    border-radius: 2px;
+}
+
+.page2 .card .card2 .income_card .graph .graph_line .line3 {
+    height: 60px;
+    width: 35px;
+    background-color: #B5E4CA;
+    border-radius: 2px;
+}
+
+.page2 .card .card2 .income_card .graph .graph_line .line4 {
+    height: 45px;
+    width: 35px;
+    background-color: #B5E4CA;
+    border-radius: 2px;
+}
+
+.page2 .card .card2 .income_card .graph .graph_line .line5 {
+    height: 65px;
+    width: 35px;
+    background-color: #B5E4CA;
+    border-radius: 2px;
+}
+
+.page2 .card .card2 .income_card .graph .graph_line .line6 {
+    height: 65px;
+    width: 35px;
+    background-color: #FFBC99;
+    border-radius: 2px;
+}
+
+.page2 .card .card2 .income_card .graph .graph_line .line7 {
+    height: 70px;
+    width: 35px;
+    background-color: #B5E4CA;
+    border-radius: 2px;
+}
+
+.page2 .card .card2 .income_card .graph_month {
+    display: flex;
+    gap: 1.8rem;
+    margin-left: 1.8rem;
+    margin-top: -5px;
+}
+
+.page2 .card .card2 .income_card .graph_month p {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: #6F767E;
+    letter-spacing: -0.12px;
 }
