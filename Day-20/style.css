@@ -40,7 +40,7 @@ li {
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
-    /* border: 1px solid red; */
+    /* border: 2px solid red; */
 }
 
 .page1 nav .logo {
@@ -85,9 +85,8 @@ li {
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s;
-    /* border: 1px solid red; */
+    
 }
-
 
 
 .page1 nav .login {
@@ -159,7 +158,7 @@ li {
 
 .page1 .hero_sec .sec_left .img1 {
     width: 80%;
-    margin-top: -80px;
+    /* margin-top: -80px; */
     position: relative;
     z-index: 8;
     /* border: 2px solid red; */
@@ -1288,6 +1287,13 @@ li {
     padding: 15px 20px;
     border-radius: 25px;
     text-align: center;
+    cursor: pointer;
+}
+.page6 .inner_page6 .header .part2 .button h5:hover {
+    color: #000000;
+    background-color: var(--primary_color);
+    transition: all 0.3s linear;
+    
 }
 
 .page6 .inner_page6 .header .part2 .para {
